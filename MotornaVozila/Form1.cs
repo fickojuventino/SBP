@@ -26,10 +26,12 @@ namespace MotornaVozila
                 ISession s = DataLayer.GetSession();
 
                 // Ucitavaju se podaci o zaposlenom sa specificiranim id-em
-                Zaposleni zaposleni = s.Load<Zaposleni>(33);
-                Servis servis = s.Load<Servis>(3);
+                Zaposleni zaposleni = s.Load<Zaposleni>(35);
+                Servis servis = s.Load<Servis>(2);
 
-                MessageBox.Show(servis.odgovorniTehnicar.ime);
+                for (int i = 0; i < zaposleni.servisiSef.Count; i++)
+                    MessageBox.Show((zaposleni.servisiSef[i].datumPrijema).ToString());
+                MessageBox.Show(servis.sef.ime);
 
                 s.Close();
             }

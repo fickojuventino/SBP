@@ -16,5 +16,6 @@ namespace MotornaVozila.Entiteti
         //public virtual int idtehnicar { get; protected set; }
 
         public virtual Zaposleni odgovorniTehnicar { get; set; }
+        public virtual Zaposleni sef { get; set; }
     }
 }

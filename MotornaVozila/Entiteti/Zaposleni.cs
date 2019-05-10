@@ -22,10 +22,12 @@ namespace MotornaVozila.Entiteti
 
         // odgovorni tehnicar u servisima
         public virtual IList<Servis> servisiTehnicar { get; set; }
+        public virtual IList<Servis> servisiSef { get; set; }
 
         public Zaposleni()
         {
             servisiTehnicar = new List<Servis>();
+            servisiSef = new List<Servis>();
         }
     }
 }

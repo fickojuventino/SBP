@@ -21,6 +21,7 @@ namespace MotornaVozila.Mapiranja
 
             // reference dodati
             References(x => x.odgovorniTehnicar).Column("IDTEHNICAR").LazyLoad();
+            References(x => x.sef).Column("IDSEF").LazyLoad();
         }
     }
 }

@@ -33,6 +33,7 @@ namespace MotornaVozila.Mapiranja
             // mapiranje veze odgovorniTehnicar 1:N
             // lazyload svojstvo je podrazumevano, iskljucuje se sa .not.lazyload();
             HasMany(x => x.servisiTehnicar).KeyColumn("IDTEHNICAR");
+            HasMany(x => x.servisiSef).KeyColumn("IDSEF");
         }
     }
 }
