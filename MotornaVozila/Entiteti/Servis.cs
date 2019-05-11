@@ -17,5 +17,12 @@ namespace MotornaVozila.Entiteti
 
         public virtual Zaposleni odgovorniTehnicar { get; set; }
         public virtual Zaposleni sef { get; set; }
+        public virtual Salon salon { get; set; }
+        public virtual IList<Vozilo> servisiranaVozila { get; set; }
+
+        public Servis()
+        {
+            servisiranaVozila = new List<Vozilo>();
+        }
     }
 }

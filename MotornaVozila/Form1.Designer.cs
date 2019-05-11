@@ -40,7 +40,7 @@
             this.cmdRead.Name = "cmdRead";
             this.cmdRead.Size = new System.Drawing.Size(271, 23);
             this.cmdRead.TabIndex = 0;
-            this.cmdRead.Text = "Ucitavanje podataka o prodavnici";
+            this.cmdRead.Text = "Read Data";
             this.cmdRead.UseVisualStyleBackColor = true;
             this.cmdRead.Click += new System.EventHandler(this.cmdRead_Click);
             // 

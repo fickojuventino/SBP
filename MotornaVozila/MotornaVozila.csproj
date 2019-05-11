@@ -60,7 +60,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataLayer.cs" />
+    <Compile Include="Entiteti\Kupac.cs" />
+    <Compile Include="Entiteti\NezavisniEkonomista.cs" />
+    <Compile Include="Entiteti\Salon.cs" />
     <Compile Include="Entiteti\Servis.cs" />
+    <Compile Include="Entiteti\Specijalnost.cs" />
+    <Compile Include="Entiteti\Vozilo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,7 +73,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Entiteti\Zaposleni.cs" />
+    <Compile Include="Mapiranja\KupacMapiranje.cs" />
+    <Compile Include="Mapiranja\NezavisniEkonomistaMapiranje.cs" />
+    <Compile Include="Mapiranja\SalonMapiranje.cs" />
     <Compile Include="Mapiranja\ServisMapiranje.cs" />
+    <Compile Include="Mapiranja\SpecijalnostMapiranje.cs" />
+    <Compile Include="Mapiranja\VoziloMapiranje.cs" />
     <Compile Include="Mapiranja\ZaposleniMapiranje.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

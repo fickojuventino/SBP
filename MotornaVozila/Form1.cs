@@ -27,11 +27,20 @@ namespace MotornaVozila
 
                 // Ucitavaju se podaci o zaposlenom sa specificiranim id-em
                 Zaposleni zaposleni = s.Load<Zaposleni>(35);
-                Servis servis = s.Load<Servis>(2);
+                Servis servis = s.Load<Servis>(1);
+                Kupac kupac = s.Load<Kupac>(3);
+                Vozilo vozilo = s.Load<Vozilo>(3);
+                Salon salon = s.Load<Salon>(1);
+                NezavisniEkonomista nEkonomista = s.Load<NezavisniEkonomista>(1);
+                Specijalnost specijalnost = s.Load<Specijalnost>(1);
 
-                for (int i = 0; i < zaposleni.servisiSef.Count; i++)
-                    MessageBox.Show((zaposleni.servisiSef[i].datumPrijema).ToString());
-                MessageBox.Show(servis.sef.ime);
+                MessageBox.Show(specijalnost.specijalnost);
+                MessageBox.Show(nEkonomista.ime);
+                MessageBox.Show(salon.grad);
+                MessageBox.Show(kupac.ime);
+                MessageBox.Show(vozilo.modelVozila);
+                MessageBox.Show(servis.salon.grad);
+                MessageBox.Show((zaposleni.plata).ToString());
 
                 s.Close();
             }

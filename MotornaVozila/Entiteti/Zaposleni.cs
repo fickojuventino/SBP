@@ -15,7 +15,7 @@ namespace MotornaVozila.Entiteti
         public virtual DateTime datumZaposlenja { get; set; }
         public virtual DateTime datumRodjenja { get; set; }
         public virtual int stepenStrucneSpreme { get; set; }
-        public virtual float plata { get; set; }
+        public virtual double plata { get; set; }
         public virtual string tipZaposlenog { get; set; }
         public virtual string tipUgovora { get; set; }
         public virtual DateTime datumIstekaUgovora { get; set; }
@@ -23,11 +23,15 @@ namespace MotornaVozila.Entiteti
         // odgovorni tehnicar u servisima
         public virtual IList<Servis> servisiTehnicar { get; set; }
         public virtual IList<Servis> servisiSef { get; set; }
+        public virtual IList<Salon> saloniSef { get; set; }
+        public virtual IList<Specijalnost> specijalnosti { get; set; }
 
         public Zaposleni()
         {
             servisiTehnicar = new List<Servis>();
             servisiSef = new List<Servis>();
+            saloniSef = new List<Salon>();
+            specijalnosti = new List<Specijalnost>();
         }
     }
 }

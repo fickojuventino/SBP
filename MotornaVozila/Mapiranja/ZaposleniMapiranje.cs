@@ -34,6 +34,9 @@ namespace MotornaVozila.Mapiranja
             // lazyload svojstvo je podrazumevano, iskljucuje se sa .not.lazyload();
             HasMany(x => x.servisiTehnicar).KeyColumn("IDTEHNICAR");
             HasMany(x => x.servisiSef).KeyColumn("IDSEF");
+            HasMany(x => x.saloniSef).KeyColumn("IDZAPOSLENI");
+            HasManyToMany(x => x.specijalnosti).Table("SPECIJALNOST")
+                .ParentKeyColumn("IDTEHNICAR").ChildKeyColumn("ID").Inverse().Cascade.All();
         }
     }
 }
