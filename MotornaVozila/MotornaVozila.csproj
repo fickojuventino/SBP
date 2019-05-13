@@ -60,6 +60,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataLayer.cs" />
+    <Compile Include="Dodaj_nEkonomistu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodaj_nEkonomistu.Designer.cs">
+      <DependentUpon>Dodaj_nEkonomistu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\Azuriraj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\Azuriraj.Designer.cs">
+      <DependentUpon>Azuriraj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\DodajZaposleni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\DodajZaposleni.Designer.cs">
+      <DependentUpon>DodajZaposleni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\PregledZaposleni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\PregledZaposleni.Designer.cs">
+      <DependentUpon>PregledZaposleni.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entiteti\Kupac.cs" />
     <Compile Include="Entiteti\NezavisniEkonomista.cs" />
     <Compile Include="Entiteti\Salon.cs" />
@@ -82,6 +106,18 @@
     <Compile Include="Mapiranja\ZaposleniMapiranje.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dodaj_nEkonomistu.resx">
+      <DependentUpon>Dodaj_nEkonomistu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\Azuriraj.resx">
+      <DependentUpon>Azuriraj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\DodajZaposleni.resx">
+      <DependentUpon>DodajZaposleni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\PregledZaposleni.resx">
+      <DependentUpon>PregledZaposleni.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
