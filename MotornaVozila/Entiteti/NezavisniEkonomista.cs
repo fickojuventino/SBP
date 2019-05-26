@@ -10,8 +10,8 @@ namespace MotornaVozila.Entiteti
         public virtual int id { get; protected set; }
         public virtual string ime { get; set; }
         public virtual string prezime { get; set; }
-        public virtual long maticniBroj { get; set; }
-        public virtual long telefon { get; set; }
+        public virtual long? maticniBroj { get; set; }
+        public virtual long? telefon { get; set; }
         public virtual string grad { get; set; }
         public virtual string adresa { get; set; }
 

@@ -38,6 +38,7 @@ namespace MotornaVozila.Mapiranja
             // dodati reference
             References(x => x.kupac).Column("IDKUPAC").LazyLoad();
             References(x => x.servis).Column("IDSERVIS").LazyLoad();
+            References(x => x.salon).Column("IDSALON").LazyLoad();
         }
     }
 }

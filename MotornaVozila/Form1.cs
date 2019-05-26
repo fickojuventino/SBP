@@ -244,5 +244,54 @@ namespace MotornaVozila
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnServis_Click(object sender, EventArgs e)
+        {
+            frmServisi fs = new frmServisi();
+            fs.ShowDialog();
+            fs.Dispose();
+        }
+
+        private void btn_kupac_Click(object sender, EventArgs e)
+        {
+            frmKupac fk = new frmKupac();
+            fk.ShowDialog();
+            fk.Dispose();
+        }
+
+        private void btn_specijalnost_Click(object sender, EventArgs e)
+        {
+            frmSpecijalnost fs = new frmSpecijalnost();
+            fs.ShowDialog();
+            fs.Dispose();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmNezavisniEkonomista fne = new frmNezavisniEkonomista();
+            fne.ShowDialog();
+            fne.Dispose();
+        }
+
+        private void btnSalon_Click(object sender, EventArgs e)
+        {
+            frmSalon fs = new frmSalon();
+            fs.ShowDialog();
+            fs.Dispose();
+        }
+
+        private void btn_vozilo_Click(object sender, EventArgs e)
+        {
+            frmVozilo fv = new frmVozilo();
+            fv.ShowDialog();
+            fv.Dispose();
+        }
+
+        private void btn_zaposleni_Click(object sender, EventArgs e)
+        {
+            frmZaposleni fz = new frmZaposleni();
+            fz.ShowDialog();
+            fz.Dispose();
+        }
     }
 }

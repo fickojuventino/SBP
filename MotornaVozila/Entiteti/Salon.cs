@@ -9,6 +9,7 @@ namespace MotornaVozila.Entiteti
     {
         public virtual int idSalon { get; protected set; }
         public virtual string grad { get; set; }
+        public virtual string adresa { get; set; }
         public virtual float stepenOpremljenosti { get; set; }
 
         public virtual Zaposleni sef { get; set; }

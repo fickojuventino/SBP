@@ -16,6 +16,7 @@ namespace MotornaVozila.Mapiranja
             Id(x => x.idSalon, "IDSALON").GeneratedBy.TriggerIdentity();
 
             Map(x => x.grad, "GRAD");
+            Map(x => x.adresa, "ADRESA");
             Map(x => x.stepenOpremljenosti, "STEPENOPREMLJENOSTI");
 
             References(x => x.sef).Column("IDZAPOSLENI").LazyLoad();

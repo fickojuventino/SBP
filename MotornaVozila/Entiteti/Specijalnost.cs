@@ -14,7 +14,6 @@ namespace MotornaVozila.Entiteti
 
         // task - resi kompozitni kljuc idtehnicar + specijalnost
 
-
         public Specijalnost()
         {
             zaposleni = new List<Zaposleni>();

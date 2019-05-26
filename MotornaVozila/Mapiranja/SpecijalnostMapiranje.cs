@@ -17,7 +17,7 @@ namespace MotornaVozila.Mapiranja
 
             Map(x => x.specijalnost, "SPECIJALNOST");
 
-            HasManyToMany(x => x.zaposleni).Table("SPECIJALNOST").ParentKeyColumn("ID").ChildKeyColumn("IDTEHNICAR");
+            HasManyToMany(x => x.zaposleni).Table("SPECIJALNOST").ParentKeyColumn("ID").ChildKeyColumn("IDTEHNICAR").Cascade.All();
         }
     }
 }
